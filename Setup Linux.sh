@@ -9,8 +9,8 @@ LỆNH LẤY SSH KEY
 ssh-keygen -t rsa -b 4096
 cat tên đường dẫn public
 
-CÀI ĐẶT LINUX-FOLDERS
-git clone https://github.com/HuyMatec/Linux-Folders.git
+CÀI ĐẶT Setup-Linux.git
+git clone git@github.com:HuyMatec/Setup-Linux.git
 
 FIX CONTROL BRIGHTNESS Pop!_OS
 sudo kernelstub -a "acpi_backlight=native"
@@ -29,6 +29,8 @@ ibus restart
 SETUP ZSH SHELL
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+BẮT ĐẦU CLONE CÁC GÓI
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
@@ -41,11 +43,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git sudo history encode64 copypath zsh-autosuggestions zsh-syntax-highlighting)
 
 Theo thứ tự chọn y y y y 3 1 2 4 1 1 2 1 4 1 2 2 2 n 1 y 
-
-Cài đặt xong Android Studio thì thêm environment cho file .zshrc
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 SETUP FISH SHELL
 sudo apt-get install fish
@@ -83,6 +80,11 @@ curl -fsSL https://bun.sh/install | bash
 CÀI ĐẶT ANDROID_STUDIO
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt install android-studio -y
+
+Cài đặt xong Android Studio thì thêm environment cho file .zshrc
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 SETUP MÔI TRƯỜNG FISH SHELL TRONG FILE config.fish
 sudo nano .config/fish/config.fish
@@ -167,3 +169,10 @@ MENU FAN OPTIONS
 Default Power with Auto Fan: sudo bash nitrosense da
 Performance Power with Max Fan: sudo bash nitrosense pm
 Performance Power with Custom Fan at 50%: sudo bash nitrosense pc 50
+
+CÀI ĐẶT TOUCHEGG 
+Vào Extension Manager install X11 Gesture
+sudo add-apt-repository ppa:touchegg/stable   
+sudo apt update
+sudo apt install touchegg
+systemctl status touchegg.service
