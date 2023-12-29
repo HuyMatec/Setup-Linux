@@ -81,6 +81,11 @@ CÀI ĐẶT ANDROID_STUDIO
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt install android-studio -y
 
+CÀI ĐẶT FLUTTER 
+sudo snap install flutter --classic
+flutter doctor --android-licenses
+export PATH="$PATH:`pwd`/flutter/bin" => thêm vào file .zshrc
+
 Cài đặt xong Android Studio thì thêm environment cho file .zshrc
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
