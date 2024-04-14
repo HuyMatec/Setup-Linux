@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "terminal.background": "#00000018",
+    "terminal.background": "#000000",
     "terminal.foreground": "#dddad6",
     "terminal.ansiBlack": "#1D2021",
     "terminal.ansiBrightBlack": "#665C54",
@@ -14,10 +14,10 @@
     "terminal.ansiBrightYellow": "#FAC03B",
     "terminal.ansiBlue": "#00a1f9",
     "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiGreen": "#47d415",
     "terminal.ansiMagenta": "#8F4673",
     "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiWhite": "#ffffff",
     "terminal.ansiYellow": "#FAC03B"
   },
   "explorer.confirmDelete": false,
