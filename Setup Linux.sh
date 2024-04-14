@@ -30,46 +30,44 @@ SETUP ZSH SHELL
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-BẮT ĐẦU CLONE CÁC GÓI
+Vào Preferences Terminal đổi tên môi trường thành ZSH_Environment 
+Vào Command đến Tích vào checkbox Run a custom command instead of my shell
+Điền vào Custom command: /usr/bin/zsh
+Clone từng gói 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
 Đặt zsh làm mặc định
 chsh -s $(which zsh)
-
 SETUP MÔI TRƯỜNG ZSH SHELL TRONG FILE .zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git sudo history encode64 copypath zsh-autosuggestions zsh-syntax-highlighting)
-
+Kiểm tra kĩ file xóa dòng plugins(git)
 Theo thứ tự chọn y y y y 3 1 2 4 1 1 2 1 4 1 2 2 2 n 1 y 
 
 SETUP FISH SHELL
 sudo apt-get install fish
-
 Đặt làm mặc định
 chsh -s (command -s fish)
-
 CÀI ĐẶT CURL & WATCHMAN
 sudo apt-get install curl
 sudo apt-get install watchman
 sudo apt update
-
 CÀI ĐẶT FISHER NVM LOGO_FISH
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fisher install jorgebucaran/nvm.fish
 fisher install laughedelic/fish_logo
-
 SETUP FISH ICON
 fisher install IlanCosman/tide@v6
 Theo thứ tự chọn số 3 2 2 1 3 1 4 1 1 2 2 1
 
 CÀI ĐẶT VÀ ĐẶT MẶC ĐỊNH NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-nvm ls-remote
 nvm install v18.18.0
 nvm use v18.18.0
 set --universal nvm_default_version v18.18.0
+Coi version nvm
+nvm ls-remote
 
 CÀI ĐẶT YARN GLOBAL TRÊN MÁY
 npm i --global yarn
@@ -177,7 +175,7 @@ Performance Power with Custom Fan at 50%: sudo bash nitrosense pc 50
 
 CÀI ĐẶT TOUCHEGG 
 Vào Extension Manager install X11 Gesture
-sudo add-apt-repository ppa:touchegg/stable   
+sudo add-apt-repository ppa:touchegg/stable
 sudo apt update
 sudo apt install touchegg
 systemctl status touchegg.service
