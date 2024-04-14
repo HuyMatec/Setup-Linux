@@ -148,7 +148,14 @@ Icon=/home/huymatec2003/.icons/Cupertino-Ventura/apps/128/postman.png
 Categories=Development;
 
 CÀI ĐẶT FLIPPER
-sudo mv ~/Downloads/flipper /opt/flipper
+Link download: 
+- https://github.com/facebook/flipper/releases/download/v0.239.0/Flipper-linux.zip
+Link icon: 
+- https://camo.githubusercontent.com/44d544229df4e3786e4c6743f54e25357a31a55c84674039f699aa12a0d9c605/68747470733a2f2f6662666c69707065722e636f6d2f696d672f69636f6e2e706e67
+Di chuyển icon đến /home/huymatec2003/.icons/Cupertino-Ventura/apps/128 
+Vào Download mở Terminal dùng lệnh: 
+- mv flipper.png /home/huymatec2003/.icons/Cupertino-Ventura/apps/128/
+sudo mv ~/Downloads/Flipper-linux /opt/flipper
 sudo nano /usr/share/applications/flipper.desktop
 [Desktop Entry]
 Name=Flipper
