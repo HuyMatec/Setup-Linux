@@ -55,7 +55,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.confirmSync": false,
   "git.ignoreRebaseWarning": true,
-  "workbench.colorTheme": "OM Theme (No Italic)",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.fontFamily": "Roboto",
   "editor.fontSize": 16,
@@ -79,5 +78,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "breadcrumbs.enabled": false,
-  "window.zoomLevel": 1.5
+  "window.zoomLevel": 1.5,
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "OM Theme (No Italic)"
 }
