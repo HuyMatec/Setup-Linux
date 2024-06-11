@@ -22,7 +22,7 @@
   },
   "explorer.confirmDelete": false,
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.mouseWheelZoom": true,
   "json.schemas": [],
@@ -79,6 +79,12 @@
   "editor.renderControlCharacters": false,
   "breadcrumbs.enabled": false,
   "window.zoomLevel": 1.5,
-  "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "OM Theme (No Italic)"
+  "workbench.colorTheme": "OM Theme (No Italic)",
+  "explorer.compactFolders": false,
+  "explorer.confirmPasteNative": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.jsxSingleQuote": false,
+  "prettier.singleQuote": true
 }
