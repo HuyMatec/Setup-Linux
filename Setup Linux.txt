@@ -186,3 +186,67 @@ sudo add-apt-repository ppa:touchegg/stable
 sudo apt update
 sudo apt install touchegg
 systemctl status touchegg.service
+
+Setup Starship trên windows
+    Cài đặt choco:
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    Cài đặt starship:
+        choco install starship
+    Setup môi trường starship
+        Vào Documents chọn folder Powershell tạo 1 file tên là Microsoft.PowerShell_profile.ps1 thêm cái này vào file đó Invoke-Expression (&starship init powershell)
+    Tiếp theo mở lại Powershell7 lên lại 
+        Paste lệnh mkdir -p ~/.config rồi vào đường dẫn này C:\Users\tên của máy\.config tạo 1 file starship.toml thêm cái này vào file đó
+            [battery]
+            full_symbol = "🔋"
+            charging_symbol = "🔌"
+            discharging_symbol = "⚡"
+
+            [[battery.display]]
+            threshold = 100
+            style = "bold green"
+
+            [cmd_duration]
+            min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+            format = " took [$duration]($style)"
+
+            [directory]
+            truncation_length = 5
+            format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+            [git_branch]
+            symbol = '🌱 '
+            truncation_length = 4
+            truncation_symbol = ''
+            ignore_branches = ['master', 'main']
+
+            [git_commit]
+            commit_hash_length = 4
+            tag_symbol = '🔖 '
+
+            [git_status]
+            conflicted = '🏳'
+            ahead = '🏎💨'
+            behind = '😰'
+            diverged = '😵'
+            up_to_date = '✓'
+            untracked = '🤷'
+            stashed = '📦'
+            modified = '📝'
+            staged = '[++\($count\)](green)'
+            renamed = '👅'
+            deleted = '🗑'
+
+            [package]
+            format = 'via [🎁 $version](208 bold) '
+
+            [time]
+            disabled = false
+            use_12hr = false
+            format = '🕙 [\[ $time \]]($style) '
+            time_format = '%T'
+            utc_time_offset = 'local'
+            time_range = '-'
+
+            [nodejs]
+            format = 'via [🤖 $version](bold green) '
+        
