@@ -20,41 +20,12 @@
     "terminal.ansiWhite": "#ffffff",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "explorer.confirmDelete": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.mouseWheelZoom": true,
-  "json.schemas": [],
-  "git.ignoreMissingGitWarning": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "redhat.telemetry.enabled": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "editor.snippetSuggestions": "bottom",
-
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
   "dart.previewFlutterUiGuides": true,
-  "editor.fontLigatures": true,
-  "git.autofetch": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.view.alwaysShowHeaderActions": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.confirmSync": false,
-  "git.ignoreRebaseWarning": true,
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.fontFamily": "Roboto",
   "editor.fontSize": 16,
@@ -75,16 +46,13 @@
       "icon": "terminal-powershell"
     }
   },
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false,
-  "breadcrumbs.enabled": false,
   "window.zoomLevel": 1.5,
-  "workbench.colorTheme": "OM Theme (No Italic)",
-  "explorer.compactFolders": false,
-  "explorer.confirmPasteNative": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.jsxSingleQuote": false,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "OM Theme (No Italic)",
+  "path-intellisense.extensionOnImport": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
