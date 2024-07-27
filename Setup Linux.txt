@@ -254,3 +254,6 @@ Setup Starship trên windows
             [nodejs]
             format = 'via [🤖 $version](bold green) '
         
+
+C:\Windows\System32\shutdown.exe -s -t 0 shutdown
+C:\Windows\System32\shutdown.exe -r -t 0 restart
