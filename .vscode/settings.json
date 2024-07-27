@@ -1,24 +1,15 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "terminal.background": "#000000",
-    "terminal.foreground": "#dddad6",
-    "terminal.ansiBlack": "#1D2021",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#0D6678",
-    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.background": "#232323",
+    "terminal.foreground": "#ffffff",
+    "terminal.ansiBrightBlue": "#0033cc",
+    "terminal.ansiBrightCyan": "#0190dc",
     "terminal.ansiBrightGreen": "#237e02",
-    "terminal.ansiBrightMagenta": "#8F4673",
-    "terminal.ansiBrightRed": "#FB543F",
-    "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiBrightMagenta": "#0033cc",
+    "terminal.ansiBrightWhite": "#e2c906",
+    "terminal.ansiWhite": "#2006e2",
     "terminal.ansiBlue": "#00a1f9",
-    "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#47d415",
-    "terminal.ansiMagenta": "#8F4673",
-    "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#ffffff",
-    "terminal.ansiYellow": "#FAC03B"
   },
   "editor.snippetSuggestions": "bottom",
   "editor.formatOnSave": true,
@@ -26,8 +17,8 @@
     "source.fixAll": "explicit"
   },
   "dart.previewFlutterUiGuides": true,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.fontFamily": "Roboto",
+  "terminal.integrated.fontFamily": "JetBrainsMonoNerdFont",
+  "editor.fontFamily": "JetBrainsMonoNerdFont",
   "editor.fontSize": 16,
   "terminal.integrated.profiles.linux": {
     "bash": {
@@ -42,17 +33,30 @@
       "icon": "terminal-tmux"
     },
     "pwsh": {
-      "path": "pwsh",
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
       "icon": "terminal-powershell"
     }
   },
-  "window.zoomLevel": 1.5,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.jsxSingleQuote": false,
   "prettier.singleQuote": true,
   "workbench.colorTheme": "OM Theme (No Italic)",
-  "path-intellisense.extensionOnImport": true,
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 1.5,
+  "explorer.compactFolders": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.tree.enableStickyScroll": false,
+  "editor.linkedEditing": true,
+  "terminal.external.windowsExec":  "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 }
