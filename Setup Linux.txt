@@ -190,10 +190,14 @@ systemctl status touchegg.service
 Setup Starship trên windows
     Cài đặt choco:
         Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+	choco install -y nodejs-lts openjdk11
     Cài đặt starship:
         choco install starship
     Setup môi trường starship
-        Vào Documents chọn folder Powershell tạo 1 file tên là Microsoft.PowerShell_profile.ps1 thêm cái này vào file đó Invoke-Expression (&starship init powershell)
+        Vào Documents chọn folder Powershell tạo 1 file tên là Microsoft.PowerShell_profile.ps1 
+
+	Invoke-Expression (&starship init powershell)
     Tiếp theo mở lại Powershell7 lên lại 
         Paste lệnh mkdir -p ~/.config rồi vào đường dẫn này C:\Users\tên của máy\.config tạo 1 file starship.toml thêm cái này vào file đó
             [battery]
