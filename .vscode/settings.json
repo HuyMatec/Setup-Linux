@@ -17,7 +17,7 @@
     "source.fixAll": "explicit"
   },
   "dart.previewFlutterUiGuides": true,
-  "terminal.integrated.fontFamily": "JetBrainsMonoNerdFont",
+  "terminal.integrated.fontFamily": "monospace",
   "editor.fontFamily": "JetBrainsMonoNerdFont",
   "editor.fontSize": 16,
   "terminal.integrated.profiles.linux": {
