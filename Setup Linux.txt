@@ -12,6 +12,9 @@ cat tên đường dẫn public
 CÀI ĐẶT Setup-Linux.git
 git clone git@github.com:HuyMatec/Setup-Linux.git
 
+Cách bật tính năng "Click 2 lần để thu nhỏ (minimize)" trên dock Ubuntu
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
 FIX CONTROL BRIGHTNESS Pop!_OS
 sudo kernelstub -a "acpi_backlight=native"
 
